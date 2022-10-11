@@ -4,13 +4,26 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Kyriakos Olive Oil</title>
    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-    <div class="banner" id="home">
-        <div class="navbar">
+    <header>
+        <img src="/img/logo.png" class="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#"><i class='fas fa-shopping-cart'></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+        <!-- <div class="navbar">
             <img src="/img/logo.png" class="logo">
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -18,38 +31,50 @@
                 <li><a href="#contact">Contact Us</a></li>
                 <li><a href="#"><i class='fas fa-shopping-cart'></i></a></li>
             </ul>
+        </div> -->
+    <main>
+        <div class="banner" id="home">
+            <div class="content">
+                <h1>ΑΝΑΒΑΘΜΙΣΕ ΤΗΝ ΠΟΙΟΤΗΤΑ ΖΩΗΣ ΣΟΥ</h1>
+                <p>Eλληνικό παρθένο ελαιόλαδο από ελαιώνες Aργολίδας.</p>
+            </div>
         </div>
 
-        <div class="content">
-            <h1>ΑΝΑΒΑΘΜΙΣΕ ΤΗΝ ΠΟΙΟΤΗΤΑ ΖΩΗΣ ΣΟΥ</h1>
-            <p>Eλληνικό παρθένο ελαιόλαδο από ελαιώνες Aργολίδας.</p>
-        </div>
-    </div>
-
-    <section class="about" id="about">
-        <div class="container">
-            <h2 class="maintitle">About Us</h2>
-            <div class="periexomeno">
-                <div class="image">
-                    <img src="/img/manaki.jpg" alt="">
+        <section class="about" id="about">
+            <div class="container">
+                <h2 class="maintitle">About Us</h2>
+                <div class="periexomeno">
+                    <div class="image">
+                        <img src="/img/manaki.jpg" alt="">
+                    </div>
+                    <div class="textbox">
+                        <h3>Η ιστορία μας</h3>
+                        <p> Οι ρίζες μας από τον Άγιο Δημήτριο, Δήμου Επιδαύρου Αργολίδας. 3η γενιά ελαιοπαραγωγών...</p>
+                    </div>
                 </div>
-                <div class="textbox">
-                    <h3>Η ιστορία μας</h3>
-                    <p> Οι ρίζες μας από τον Άγιο Δημήτριο, Δήμου Επιδαύρου Αργολίδας. 3η γενιά ελαιοπαραγωγών...</p>
+            </div>
+        </section>
+
+        <div class="contact" id="contact">
+            <div class="container">
+                <h2 class="maintitle">Contact Us</h2>
+                <div class="containerContact">
+                    <div class="contactMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.095372346332!2d20.84128401977655!3d39.67006915256578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x135be9cf2e00ed01%3A0xe20fd3f02f1820f!2zzpHOuM6xzr3Osc-Dzq_Ov8-FIM6kz4POsc66zqzOu8-Jz4YgMiwgzpnPic6szr3Ovc65zr3OsSA0NTMgMzM!5e0!3m2!1sel!2sgr!4v1665511751401!5m2!1sel!2sgr" width="100%" height="20" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="contactForm">
+                        <form>
+                            <input type="text" placeholder="Όνομα" class="contactTxt">
+                            <input type="text" placeholder="E-mail" class="contactTxt">
+                            <textarea placeholder="Message" class="contactMsg"></textarea>
+                            <input type="submit" name="Submit" class="contactBtn"/>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="contact" id="contact">
-        <div class="container">
-            <h2 class="maintitle">Contact Us</h2>
-            <div class="periexomeno">
-                <div class="image">
-                    
-                </div>
-        </div>
-    </div>
+    </main>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/app.js"></script>
 </body>
+</html>
