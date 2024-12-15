@@ -10,6 +10,8 @@ html{
     scroll-behavior: smooth;
 }
 body{
+    margin: 0;
+    overflow-x: hidden;
     background: #5e7c64;
 }
 header {
@@ -33,6 +35,19 @@ header {
 .logo {
     width: 100px; /* Adjusted logo width */
     cursor: pointer;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: rgb(212, 221, 213);
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 1000;
 }
 
 .navbar ul{
@@ -134,7 +149,7 @@ section{
     font-size: 3em;
     margin-bottom: 30px;
     font-family: 'Abyssinica SIL', serif;
-    color: #fff;
+    color: rgb(212, 221, 213);
 }
 .periexomeno{
     position: relative;
@@ -170,10 +185,12 @@ section{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     transform: translate(-40px, 20px);
+    color: rgb(212, 221, 213);
 }
 .periexomeno .textbox h3{
     font-size: 1.5em;
     margin-bottom: 10px;
+    
 }
 .containerContact{
     width: 90%;
@@ -201,6 +218,7 @@ section{
     flex: 1;
     text-align: left;
     padding: 30px;
+    color: rgb(212, 221, 213);
 }
 
 .contactInfo h3 {
@@ -215,5 +233,48 @@ section{
 @media (max-width: 768px) {
     .containerContact {
         width: 95%; /* Adjust for smaller screens */
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #2e4132;
+        border-radius: 5px;
+        width: 150px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        border-bottom: 1px solid #444;
+    }
+
+    .navbar ul li a:hover {
+        background: #00881d;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .navbar.show {
+        display: flex;
+        flex-direction: column;
     }
 }

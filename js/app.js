@@ -36,3 +36,12 @@ const sectionOneObserver = new IntersectionObserver(function(
 sectionOneOptions);
 
 sectionOneObserver.observe(sectionOne);
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButton = document.querySelector('.menu-toggle');
+  const navbar = document.querySelector('.navbar');
+
+  toggleButton.addEventListener('click', () => {
+      navbar.classList.toggle('show');
+  });
+});
